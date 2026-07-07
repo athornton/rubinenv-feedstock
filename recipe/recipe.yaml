@@ -1,7 +1,7 @@
 context:
   name: "rubin-env"
   version: "13.0.1"
-  build_number: 6
+  build_number: 7
   linux_gxx_abi_version: 1019
   osx_gxx_abi_version: 1002
 
@@ -307,7 +307,7 @@ outputs:
         - bqplot >=0.12.45  # (*): vis, unknown if used
         - ciso8601 >=2.3.3  # (*): datestamp conversion...seen in DM-33030
         - cloudpickle >=3.1.2  # (*): unknown if used
-        - dask-core >=2025.11.0  # required by lsdb (RFC 1109)
+        - dask-core >=2025.11.0,<2026.07.0  # required by lsdb (RFC 1109)
         - datashader >=0.18.2  # cf bokeh
         - fastparquet >=2024.11.0  # (*): used by dask
         - ffmpeg >=7.1.1  # DM-34945
